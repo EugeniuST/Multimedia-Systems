@@ -19,10 +19,10 @@ include 'header.php';
 <div class="overlay">
        <a class="close">&times;</a>
          <div class="overlay__content">
-           <a href="index.php">Acasă</a>
-           <a href="proprietati.php">Imobile</a>
-           <a href="index.php#aboutus">Despre noi</a>
-           <a href="index.php#contacts">Contacte</a>
+           <a href="index.php">Home</a>
+           <a href="proprietati.php">Real Estate</a>
+           <a href="index.php#aboutus">About Us</a>
+           <a href="index.php#contacts">Contacts</a>
          </div>
      </div>
 
@@ -31,21 +31,21 @@ include 'header.php';
 <section class="section-banner">
     <div class="container">
         <form id="search" action="proprietati.php" method="GET">
-            <h1>Găsește-ți casa ideală</h1>
+            <h1>Find your Real Estate</h1>
             <div class="form-field">
                 <select name="tip_achizitie">
-                    <option value="">-Tip achizitie-</option>
-                    <option value="Cumpara">Cumpără</option>
-                    <option value="Arendeaza">Arendează</option>
+                    <option value="">-Purchase type-</option>
+                    <option value="Cumpara">Rent</option>
+                    <option value="Arendeaza">Buy</option>
                 </select>
             </div>
             <div class="form-field">
                 <select name="tip_imobil">
-                    <option value="">-Tip imobil-</option>
+                    <option value="">-Real Estate Type-</option>
                     <option value="Apartament">Apartament</option>
-                    <option value="Oficiu">Oficiu</option>
-                    <option value="Casa">Casă</option>
-		                <option value="Spatiu comercial">Spatiu comercial</option>
+                    <option value="Oficiu">Office</option>
+                    <option value="Casa">Home</option>
+		                <option value="Spatiu comercial">Commercial Space</option>
                 </select>
             </div>
             <div class="form-field">
@@ -61,7 +61,7 @@ include 'header.php';
               </select>
             </div>
             <div class="form-field">
-                <button type="submit">CAUTĂ</button>
+                <button type="submit">Search</button>
             </div>
         </form>
     </div>
@@ -70,7 +70,7 @@ include 'header.php';
 
 <section class="section-properties" id="properties">
     <div class="container">
-        <h1>Oferte fierbinți</h1>
+        <h1>Hot offers</h1>
         <div class="properties">
             <div class="property">
                 <div class="property-image">
@@ -136,7 +136,7 @@ include 'header.php';
 
 <section class="section-testimonials" id="testimonials">
     <div class="container">
-        <h1>Recenzii</h1>
+        <h1>Testimonials</h1>
         <div class="testimonials ">
             <div class="testimonials-item">
                 <div class="testimonials-thumbnail">
@@ -187,7 +187,7 @@ include 'header.php';
 
 <section class="section-about" id="aboutus">
     <div class="container">
-        <h1>Despre noi</h1>
+        <h1>About Us</h1>
         <div class="about">
             <div class="about-image">
                 <img src="images/about.jpg">
@@ -206,7 +206,7 @@ include 'header.php';
 
 <section class="section-contact" id="contacts">
     <div class="container">
-        <h1>Contacte</h1>
+        <h1>Contacts</h1>
         <div class="contact">
             <div class="contact-text">
               <h3>Adresa București</h3>
@@ -242,7 +242,7 @@ $( document ).ready(function() {
 
   $(document).on('keyup',function(evt) {
     if (evt.keyCode == 27) {
-      $("textarea").val("Mesajul...");
+      $("textarea").val("Message...");
     }
   });
 
@@ -259,7 +259,7 @@ $( document ).ready(function() {
         {
           $("input[name='name']").val(null);
           $("input[name='email']").val(null);
-          $("#message").val("Mesajul...");
+          $("#message").val("Message...");
         }
       });
     }
