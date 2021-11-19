@@ -2,41 +2,41 @@
     <div class="container">
         <div class="footer-row">
             <div class="footer-column">
-                <h5>Căutări Populare</h5>
+                <h5>Popular Searches</h5>
                 <ul>
                     <li>
-                        <a href="#">Apartamente de vânzare</a>
+                        <a href="#">Apartaments for selling</a>
                     </li>
                     <li>
-                        <a href="#">Apartmente de chirie</a>
+                        <a href="#">Apartments for renting</a>
                     </li>
                     <li>
-                        <a href="#">Oficii de închiriat</a>
+                        <a href="#">Offices for selling</a>
                     </li>
                     <li>
-                        <a href="#">Oficii de închiriat</a>
+                        <a href="#">Offices for renting</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h5>Linkuri Rapide</h5>
+                <h5>Fast Links</h5>
                 <ul>
                     <li>
-                        <a href="#">Prețuri</a>
+                        <a href="#">Prices</a>
                     </li>
                     <li>
-                        <a href="#">Serviciile noastre</a>
+                        <a href="#">Our Services</a>
                     </li>
                     <li>
-                        <a href="#">Despre noi</a>
+                        <a href="#">About Us</a>
                     </li>
                     <li>
-                        <a href="#">Contacte</a>
+                        <a href="#">Contacts</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-column">
-              <h5>Abonează-te la newsletter</h5>
+              <h5>Subscribe for news-letter</h5>
               <form id="subscribe">
                   <div class="form-field">
                       <input name="name_abonare" placeholder="Prenume, Nume" required />
@@ -45,7 +45,7 @@
                       <input name="email_abonare" placeholder="Adresa de Email" required />
                   </div>
                   <div class="form-field">
-                      <button id= "abonare" type="button">ABONARE</button>
+                      <button id= "abonare" type="button">SUBSCRIBE</button>
                   </div>
               </form>
             </div>
