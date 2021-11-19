@@ -31,7 +31,7 @@ include 'header.php';
 <section class="section-banner">
     <div class="container">
         <form id="search" action="proprietati.php" method="GET">
-            <h1>Găsește-ți casa ideală</h1>
+            <h1>Găssadasdsaește-ți casa ideală</h1>
             <div class="form-field">
                 <select name="tip_achizitie">
                     <option value="">-Tip achizitie-</option>
