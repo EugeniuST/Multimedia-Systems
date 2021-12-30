@@ -20,7 +20,7 @@
         <th scope="col">#</th>
         <th scope="col">Nume</th>
         <th scope="col">Telefon</th>
-        <th scope="col">Email</th>
+        <th scope="col">Ema -il</th>
       </tr>
     </thead>
     <tbody>
@@ -42,5 +42,5 @@
 </table>
 
 <?php else: ?>
-    Nu exista agenti!
+    Nu exista agenti
 <?php endif; ?>
