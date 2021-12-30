@@ -42,7 +42,7 @@
 
         <div class="form-group">
           <label for="phone_number">Mobile number</label>
-          <input type="phone" class="form-control" name="phone_number" id="phone_number" required>
+          <input type="tel" class="form-control" name="phone_number" id="phone_number" pattern="[+]{1}[0-9]{3}[0-9]{3}[0-9]{5}" required>
         </div>
 
         <button type="submit" class="btn btn-primary my-3">Register</button>
