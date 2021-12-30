@@ -45,7 +45,7 @@
           <input type="phone" class="form-control" name="phone_number" id="phone_number" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-primary my-3">Register</button>
       </form>
       <div class="text-center">
 

@@ -71,7 +71,7 @@ include 'header.php';
 <section class="section-properties" id="properties">
     <div class="container">
         <h1>Hot offers</h1>
-        <div class="properties">
+        <div class="properties justify-content-center">
             <div class="property">
                 <div class="property-image">
                     <a href="proprietate.php?id=1">

@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+.login_btn {
+  border-right:0 !important;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -93,7 +97,8 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  align-content: center;
+  padding: 0;
+  align-content: space-between;
 }
 
 #btn-menu {
@@ -227,6 +232,7 @@ textarea {
   display: flex;
   column-gap: 30px;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 .property {
@@ -699,7 +705,7 @@ button[type="submit"],
   .section-contact,
   .section-properties,
   .section-testimonials {
-    padding: 40px;
+    padding: 0;
   }
 
   #search {
@@ -791,8 +797,6 @@ button[type="submit"],
 
 
   .container {
-  padding: 0;
-  margin-left: 0;
   }
 
   .testimonials {
@@ -815,9 +819,7 @@ button[type="submit"],
   }
 }
 
-.container {
-  width: 100%;
-}
+.container {}
 
 @media (min-width: 576px) {
 
