@@ -1,32 +1,32 @@
 <?php
-  // Adauga Agent
-  if(isset($_POST['button']) && $_POST['button'] == 'submit') {
-    if(empty($_POST['name']) || empty($_POST['phone']) || empty($_POST['email'])) {
-      $_SESSION['error_msg'] = "Completati toate campurile.";
-      header('Location: adminpanel.php?page=admin-agent-add');
-      die();
-    } else {
-      $name = $_POST['name'];
-      $phone = $_POST['phone'];
-      $email = $_POST['email'];
-      $mysql->query("INSERT INTO `agenti` (nume, telefon, email) VALUES ('$name', '$phone', '$email')");
+// Adauga Agent
+if (isset($_POST['button']) && $_POST['button'] == 'submit') {
+  if (empty($_POST['name']) || empty($_POST['phone']) || empty($_POST['email'])) {
+    $_SESSION['error_msg'] = "Completati toate campurile.";
+    header('Location: adminpanel.php?page=admin-agent-add');
+    die();
+  } else {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $mysql->query("INSERT INTO `agenti` (nume, telefon, email) VALUES ('$name', '$phone', '$email')");
 
-      $_SESSION['success_msg'] = "Agentul a fost creat cu success.";
-      header('Location: adminpanel.php?page=admin-agents');
-      die();
-    }
+    $_SESSION['success_msg'] = "Agentul a fost creat cu success.";
+    header('Location: adminpanel.php?page=admin-agents');
+    die();
   }
+}
 ?>
 
 <div class="row">
   <div class="col-md-5 offset-md-3">
     <h4 class="mb-5">Adauga agent</h4>
     <form action="adminpanel.php?page=admin-agent-add" method="post">
-      <?php if(!empty($_SESSION['error_msg'])): ?>
+      <?php if (!empty($_SESSION['error_msg'])) : ?>
         <div class="alert alert-danger" role="alert">
           <?php echo $_SESSION['error_msg']; ?>
         </div>
-      <?php unset($_SESSION['error_msg']); ?>
+        <?php unset($_SESSION['error_msg']); ?>
       <?php endif; ?>
       <div class="form-group">
         <label for="name">Nume:</label>
