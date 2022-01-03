@@ -1,16 +1,18 @@
-html, body {
+html,
+body {
     color: #303441;
     font-family: sans-serif;
-    line-height: 1.15;
-  	margin: 0;
+    /* line-height: 1.15; */
+    margin: 0;
 }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
     outline: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
@@ -24,7 +26,7 @@ h1 {
 
 h6 {
     line-height: 1.5;
-	    font-size: 12px;
+    font-size: 12px;
 }
 
 img {
@@ -32,7 +34,12 @@ img {
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
 }
 
 .overlay {
@@ -42,49 +49,49 @@ button {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #303441;;
+    background-color: #303441;
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
-  }
+}
 
-  .overlay--active {
+.overlay--active {
     width: 100%;
-  }
+}
 
-  .overlay__content {
+.overlay__content {
     display: flex;
     height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .overlay a {
+.overlay a {
     padding: 15px;
     font-size: 36px;
     color: #edf0f1;
     display: block;
     transition: color 0.3s ease 0s;
-  }
+}
 
-  .overlay a:hover,
-  .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
     color: #234dd4;
-  }
-  .overlay .close {
+}
+.overlay .close {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
     color: #edf0f1;
     cursor: pointer;
-  }
+}
 
 textarea,
 input {
-  box-sizing: border-box;
-  outline: none;
-resize: none;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
 }
 
 #header {
@@ -93,12 +100,11 @@ resize: none;
 }
 
 #header .container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
-
-#btn-menu{
+#btn-menu {
     background-color: #234dd4;
     border-width: 0;
     height: 42px;
@@ -126,7 +132,7 @@ resize: none;
     position: relative;
     margin: 0;
     padding: 12px 15px 12px 15px;
-    transition: all .15s ease-in;
+    transition: all 0.15s ease-in;
 }
 
 .header-menu li a:hover {
@@ -147,14 +153,14 @@ resize: none;
 }
 
 .section-banner {
-    background: url('../images/cover.jpg') no-repeat center;
+    background: url("../images/cover.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     padding: 80px 0;
 }
 
 .section-banner:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -162,7 +168,7 @@ resize: none;
     right: 0;
     bottom: 0;
     background-color: #fff;
-    opacity: .4;
+    opacity: 0.4;
     z-index: 0;
 }
 
@@ -174,7 +180,7 @@ section .container > h1 {
     position: relative;
     max-width: 410px;
     width: 100%;
-    z-index:auto;
+    z-index: auto;
 }
 
 #search .form-field {
@@ -227,7 +233,6 @@ textarea {
 
 .properties {
     display: flex;
-    column-gap: 30px;
     flex-flow: wrap;
 }
 
@@ -282,21 +287,20 @@ textarea {
 }
 
 .property-details .container {
-  display: flex;
+    display: flex;
 }
 
 .property-details-text {
-  padding-right: 30px;
-  width: 70%;
+    padding-right: 30px;
+    width: 70%;
 }
 
 .property-details-form {
-  width: 30%;
+    width: 30%;
 }
 
-
 .testimonials {
-  display: flex;
+    display: flex;
 }
 
 .testimonials-item {
@@ -306,7 +310,7 @@ textarea {
 
 .testimonials-thumbnail {
     border-radius: 100%;
-    margin: 0 auto 20px;;
+    margin: 0 auto 20px;
     overflow: hidden;
     width: 100px;
 }
@@ -341,7 +345,6 @@ textarea {
     width: 40%;
 }
 
-
 #contactus input {
     margin-bottom: 10px;
 }
@@ -352,8 +355,8 @@ textarea {
     padding: 50px 0 30px;
 }
 #footer {
-        text-align: left;
-    }
+    text-align: left;
+}
 #footer ul {
     padding: 0;
     list-style: none;
@@ -372,18 +375,20 @@ textarea {
     font-weight: 200;
     padding: 10px;
     margin-bottom: 5px;
-    width: 100%
+    width: 100%;
 }
 
 .footer-row {
-  display: flex;
+    display: flex;
 }
 
 .footer-column {
-  width: 90%;
+    width: 90%;
 }
 
-button[type="submit"], #contact_mail, #abonare {
+button[type="submit"],
+#contact_mail,
+#abonare {
     background-color: #234dd4;
     border-width: 0;
     padding: 10px;
@@ -391,6 +396,11 @@ button[type="submit"], #contact_mail, #abonare {
     color: #fff;
     height: 50px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: center;
 }
 
 .copyright {
@@ -401,15 +411,18 @@ button[type="submit"], #contact_mail, #abonare {
     border-top: 1px solid #5f626c;
 }
 
-#contactus input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+#contactus input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #5f626c;
 }
 
-#contactus input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+#contactus input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #5f626c;
 }
 
-#contactus input::-ms-input-placeholder { /* Microsoft Edge */
+#contactus input::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #5f626c;
 }
 
@@ -432,7 +445,7 @@ button[type="submit"], #contact_mail, #abonare {
 
 .useful-links li a {
     color: #888888;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
 
 .useful-links li a:hover {
@@ -444,7 +457,7 @@ button[type="submit"], #contact_mail, #abonare {
 }
 
 .section-property .property-image {
-    padding-bottom: 40px
+    padding-bottom: 40px;
 }
 .section-amenities,
 .property-details {
@@ -501,13 +514,13 @@ button[type="submit"], #contact_mail, #abonare {
 }
 
 .property-image .images-nav .slick-slide img {
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
 }
 
 .property-image .images-nav .slick-slide:hover img {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .property-image .images-nav .slick-slide img {
@@ -530,11 +543,11 @@ button[type="submit"], #contact_mail, #abonare {
     top: 50%;
     transform: translateY(-50%);
     color: #234dd4;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 }
 
 .images-for-wrap .slick-arrow:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .slick-btn-prev {
@@ -558,9 +571,9 @@ button[type="submit"], #contact_mail, #abonare {
     padding: 24px 22px;
     max-width: 375px;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.33);
-    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.33);
-    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.33);
 }
 
 .contact-property input {
@@ -574,15 +587,18 @@ button[type="submit"], #contact_mail, #abonare {
     color: #8d8d8d;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #fff;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #fff;
 }
 
@@ -594,7 +610,7 @@ button[type="submit"], #contact_mail, #abonare {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .modal.show-modal {
@@ -602,14 +618,14 @@ button[type="submit"], #contact_mail, #abonare {
 }
 
 .modal-content {
-  border-radius: 5px;
-  max-width: 400px;
-  width: 100%;
-  margin: auto;
-  background-color: #fff;
-  padding: 30px;
-  margin-top: 100px;
-  position: relative;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 100px;
+    position: relative;
 }
 
 .modal .close {
@@ -634,11 +650,11 @@ button[type="submit"], #contact_mail, #abonare {
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
     cursor: pointer;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
 }
 
 .modal-title {
@@ -667,18 +683,18 @@ button[type="submit"], #contact_mail, #abonare {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  height: calc(1.5em + .75rem + 2px);
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -688,8 +704,6 @@ button[type="submit"], #contact_mail, #abonare {
     .section-testimonials {
         padding: 80px 0;
     }
-
-
 }
 
 @media screen and (max-width: 991px) {
@@ -705,13 +719,13 @@ button[type="submit"], #contact_mail, #abonare {
     }
 
     .properties {
-       flex-direction: column;
-       justify-content: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .property:not(:last-child),
     .property {
-        margin: 20px auto;
+        /* margin: 20px auto; */
     }
 
     .testimonials-item {
@@ -726,7 +740,7 @@ button[type="submit"], #contact_mail, #abonare {
     .footer-row,
     .contact,
     .about {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .property-details-form,
@@ -740,8 +754,8 @@ button[type="submit"], #contact_mail, #abonare {
     .about-text {
         padding-left: 0;
         width: 100%;
-		padding-left: 15px;
-    padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .contact {
@@ -756,29 +770,25 @@ button[type="submit"], #contact_mail, #abonare {
     .section-amenities ul li {
         width: 33.3333%;
     }
-	#footer {
-		text-align: center;
-	}
+    #footer {
+        text-align: center;
+    }
 
     .footer-row {
         align-items: center;
     }
-
-
-
-
 }
-*, ::after, ::before {
-    box-sizing: border-box}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
 
-    @media screen and (min-width: 769px) {
-        #btn-menu{
-            display: none;
-        }
-
-
+@media screen and (min-width: 769px) {
+    #btn-menu {
+        display: none;
     }
-
+}
 
 @media screen and (max-width: 768px) {
     .header-menu {
@@ -797,62 +807,53 @@ button[type="submit"], #contact_mail, #abonare {
     }
 
     .testimonials {
-      flex-direction: column;
-      justify-content: center;
+        flex-direction: column;
+        justify-content: center;
     }
-
-
-
 }
 
-    .section-amenities ul li {
-        width: 50%;
-    }
+.section-amenities ul li {
+    width: 50%;
+}
 
-
-
-    #footer .row > div {
-        margin-bottom: 20px;
-    }
-
+#footer .row > div {
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 450px) {
     .section-amenities ul li {
         width: 100%;
     }
-
 }
 
 .container {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-
-@media (min-width:576px) {
-	.container {
-		max-width: 540px
-	}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }
 
-@media (min-width:768px) {
-	.container {
-		max-width: 720px
-	}
-
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
 }
 
-@media (min-width:992px) {
-	.container {
-		max-width: 960px
-	}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
 }
 
-@media (min-width:1200px) {
-	.container {
-		max-width: 1140px
-	}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
 }

@@ -1,5 +1,5 @@
 <?php
-  // Adauga Agent
+  // Add Comercial agents
   if(isset($_POST['button']) && $_POST['button'] == 'submit') {
     if(empty($_POST['name']) || empty($_POST['phone']) || empty($_POST['email'])) {
       $_SESSION['error_msg'] = "Completati toate campurile.";
@@ -11,7 +11,7 @@
       $email = $_POST['email'];
       $mysql->query("INSERT INTO `agenti` (nume, telefon, email) VALUES ('$name', '$phone', '$email')");
 
-      $_SESSION['success_msg'] = "Agentul a fost creat cu success.";
+      $_SESSION['success_msg'] = "Comercial agentul a fost creat cu success.";
       header('Location: adminpanel.php?page=admin-agents');
       die();
     }
@@ -29,11 +29,11 @@
       <?php unset($_SESSION['error_msg']); ?>
       <?php endif; ?>
       <div class="form-group">
-        <label for="name">Nume:</label>
+        <label for="name">Name:</label>
         <input type="text" name="name" class="form-control" id="name" />
       </div>
       <div class="form-group">
-        <label for="phone">Telefon:</label>
+        <label for="phone">Telephone:</label>
         <input type="text" name="phone" class="form-control" id="phone">
       </div>
       <div class="form-group">

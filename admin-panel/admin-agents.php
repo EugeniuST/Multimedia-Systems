@@ -2,7 +2,7 @@
   $result = $mysql->query("SELECT * FROM `agenti`");
 ?>
 <p class="text-right mb-5">
-  <a href="adminpanel.php?page=admin-agent-add" class="btn btn-success">Adauga Agent</a>
+  <a href="adminpanel.php?page=admin-agent-add" class="btn btn-success">Add Comercial agents</a>
 </p>
 
 <?php if(!empty($_SESSION['success_msg'])): ?>
@@ -18,8 +18,8 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Nume</th>
-        <th scope="col">Telefon</th>
+        <th scope="col">Name</th>
+        <th scope="col">Telephone</th>
         <th scope="col">Email</th>
       </tr>
     </thead>

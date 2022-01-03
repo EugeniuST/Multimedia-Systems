@@ -1,5 +1,5 @@
 <?php
-  // Adauga Proprietate
+  // Add propriety
   if(isset($_POST['button']) && $_POST['button'] == 'submit') {
     $titlu = $_POST['titlu'];
     $pret = $_POST['pret'];
@@ -37,7 +37,7 @@
 
 <div class="row">
   <div class="col-md-5 offset-md-3">
-    <h4 class="mb-5">Adauga proprietate</h4>
+    <h4 class="mb-5">Add propriety</h4>
     <form action="adminpanel.php?page=admin-property-add" method="post">
       <?php if(!empty($_SESSION['error_msg'])): ?>
         <div class="alert alert-danger" role="alert">
@@ -47,11 +47,11 @@
       <?php endif; ?>
 
       <div class="form-group">
-        <label for="name">Titlu:</label>
+        <label for="name">Title:</label>
         <input type="text" name="titlu" class="form-control" id="titlu" />
       </div>
       <div class="form-group">
-        <label for="pret">Pret:</label>
+        <label for="pret">Price:</label>
         <input type="number" name="pret" class="form-control" id="pret">
       </div>
       <div class="form-group">
@@ -68,59 +68,59 @@
             </select>
       </div>
       <div class="form-group">
-        <label for="camere">Camere:</label>
+        <label for="camere">Room:</label>
         <input type="number" name="camere" class="form-control" id="camere">
       </div>
       <div class="form-group">
-        <label for="suprafata">Suprafata (mp):</label>
+        <label for="suprafata">Area (mp):</label>
         <input type="number" name="suprafata" class="form-control" id="suprafata">
       </div>
       <div class="form-group">
-        <label for="anul">Anul constructiei:</label>
+        <label for="anul">Year of building:</label>
         <input type="number" name="anul" class="form-control" id="anul">
       </div>
       <div class="form-group">
-        <label for="tip_achizitie">Tip achizitie:</label>
+        <label for="tip_achizitie">Type of action:</label>
         <select class="form-control" name="tip_achizitie" id="tip_achizitie">
-          <option>Arendeaza</option>
-          <option>Cumpara</option>
+          <option>To rent</option>
+          <option>To buy</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="tip_imobil">Tip imobil:</label>
+        <label for="tip_imobil">Building type:</label>
         <select class="form-control" name="tip_imobil" id="tip_imobil">
           <option>Apartament</option>
-          <option>Casa</option>
-          <option>Oficiu</option>
-          <option>Spatiu comercial</option>
+          <option>House</option>
+          <option>Office</option>
+          <option>Comercial space</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="oras">Oras:</label>
+        <label for="oras">City:</label>
         <input type="text" name="oras" class="form-control" id="oras" value=""/>
       </div>
       <div class="form-group">
-        <label for="descriere">Descriere:</label>
+        <label for="descriere">Description:</label>
         <textarea type="text" name="descriere" class="form-control" id="descriere" rows = "10"></textarea>
       </div>
       <div class="form-group">
-        <label for="facilitati">Facilitati:</label>
+        <label for="facilitati">Facilities:</label>
         <textarea type="text" name="facilitati" class="form-control" id="facilitati" rows = "10"></textarea>
       </div>
       <div class="form-group">
-        <label for="imagine_1">Imagine 1:</label>
+        <label for="imagine_1">Image1:</label>
         <input type="file" id="imagine_1" name="imagine_1" class="form-control" >
       </div>
       <div class="form-group">
-        <label for="imagine_2">Imagine 2:</label>
+        <label for="imagine_2">Image2:</label>
         <input type="file" id="imagine_2" name="imagine_2" class="form-control">
       </div>
       <div class="form-group">
-        <label for="imagine_3">Imagine 3:</label>
+        <label for="imagine_3">Image3:</label>
         <input type="file" id="imagine_3" name="imagine_3" class="form-control">
       </div>
       <div class="form-group">
-        <label for="imagine_4">Imagine 4:</label>
+        <label for="imagine_4">Image4:</label>
         <input type="file" id="imagine_4" name="imagine_4" class="form-control">
       </div>
       <button type="submit" name="button" value="submit" class="btn btn-primary">Adauga</button>

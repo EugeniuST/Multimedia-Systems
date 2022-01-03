@@ -1,18 +1,16 @@
 <?php
-  require_once('conf.php');
+  require_once('../conf.php');
   if(isset($_COOKIE['user'])) {
     header('Location: adminpanel.php');
   }
 ?>
-     <!-- Login= eugen1    
-          pass= 123123 -->
 <!doctype html>
 <html lang="ro">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>BestImobil | Admin</title>
+    <link rel="icon" href="/Multimedia-Systems/favicon.ico" type="image/x-icon"/>
+    <title>Best Property | Admin</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/admin.css">
@@ -22,7 +20,7 @@
 <body>
 
     <div class="admin-login">
-      <a href="index.php" title="Agentie Imobiliara" class="logo">
+      <a href="index.php" title="Comercial agentse Imobiliara" class="logo">
           <img src="images/bl1.png" />
       </a>
       <form action="auth.php" method="post">
@@ -37,7 +35,7 @@
             <input type="text" class="form-control" name="login" id="login" />
         </div>
         <div class="form-group">
-            <label for="password" class="col-form-label">Parola</label>
+            <label for="password" class="col-form-label">Password</label>
             <input type="password" class="form-control" name="pass" id="pass"  />
         </div>
 
