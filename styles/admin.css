@@ -91,7 +91,8 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: #1f222b;
 }
 

@@ -1,0 +1,300 @@
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.section-banner h1 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.icon > * {
+  color: #303441;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5%;
+}
+
+.icon > h1 {
+  font-size: 20px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.flex-row {
+  column-gap: 15px;
+}
+
+.property {
+  position: relative;
+  max-width: none !important;
+}
+
+.property-options {
+  font-weight: bold;
+}
+
+/* la search sa impart in doua coloane sectiunea */
+.properties_filter .columns-2 {
+  width: calc(66.66% - 7.5px);
+}
+
+.properties_filter .form {
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  width: calc(33.33% - 7.5px);
+}
+/*  */
+
+/* legat pentru carousel */
+.carousel {
+  position: relative;
+}
+
+.carousel .properties {
+  overflow: hidden;
+  column-gap: 15px;
+}
+
+.carousel .property {
+  flex: 0 0 calc(33.33% - 10px);
+}
+
+.carousel .slaider_arrow {
+  position: absolute;
+  z-index: 1;
+  left: -35px;
+  width: calc(100% + 70px);
+}
+
+.slaider_arrow i {
+  cursor: pointer;
+}
+
+.slaider_arrow i:hover {
+  transform: scale(1.5);
+}
+/*  */
+
+.properties_filter .property {
+  width: calc(50% - 7.5px);
+}
+
+.no_photo {
+  box-sizing: border-box;
+  border-bottom: 2px solid #ededed;
+}
+
+.favorite_symbol {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  background: white;
+  cursor: pointer;
+}
+
+.favorite_symbol svg:hover {
+  transform: scale(1.2);
+}
+
+.favorite_symbol svg {
+  color: #234cd480 !important;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .carousel .property {
+    flex: 0 0 calc(50% - 7.5px);
+  }
+  
+  .properties_filter .form {
+    display: none;
+    width: 100%;
+  }
+
+  .properties_filter .columns-2 {
+    width: 100%;
+  }
+
+  .properties_filter .columns-2 .property {
+    width: 100%;
+  }
+
+  .properties .property {
+    width: 100%;
+  }
+
+  .properties_filter .column-1 {
+    width: 100%;
+  }
+
+  .sort_filter {
+    display: flex;
+    margin: auto;
+    column-gap: 5px;
+  }
+
+  .sort_filter svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sort_filter p {
+    margin: 0;
+  }
+
+  .form {
+    position: absolute;
+    top: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .carousel .property {
+    flex: 0 0 100%;
+  }
+}
+
+/* pentru butoane inputuri universal */
+/* seteaza marimea la checkboxuri normak  */
+input[type="checkbox"],
+input[type="radio"] {
+  height: auto;
+  width: auto;
+}
+
+.media > * {
+  margin-left: 10px;
+}
+.additionaly .form-check {
+  margin-left: 10px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.buttons_for_filter {
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-reject {
+  background-color: #dc3545 !important;
+}
+
+button:hover {
+  background-color: #1d3eab !important;
+}
+
+.btn-reject:hover {
+  background-color: #dc3546c6 !important;
+}
+
+.sort_filter {
+  display: none;
+}
+
+/* pentru lista meniu */
+#sidebar li {
+  margin-top: 10px;
+}
+
+#sidebar svg {
+  height: 25px;
+  width: 25px;
+}
+
+.avatar_name {
+  cursor: pointer;
+}
+
+.avatar_name img {
+  border-radius: 50%;
+}
+
+.avatar_name p {
+  color: white;
+}
+
+#sidebar .avatar_name,
+#sidebar .search {
+  padding: 10px;
+}
+
+.search svg {
+  height: 25px !important;
+  color: #303441 !important;
+}
+
+.up_menu {
+  padding-top: 20px;
+}
+
+.denumire_categorie_li {
+  width: 100% !important;
+}
+
+ul li {
+  font-weight: lighter !important;
+}
+
+.additionally {
+  color: #234dd4 !important;
+}
+
+.section-map .container {
+  margin-bottom: 40px;
+}
+
+.section-map svg {
+  display: block;
+  width: 20px !important;
+  color: #dc3545;
+}
+
+.section-map h3 {
+  margin: 0px;
+}
+
+.save-color {
+  color: #234dd4 !important;
+}
+
+/* la paginile de login si register */
+
+.title_register_login {
+  position: relative;
+  z-index: aut0;
+}
+
+label {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+}
